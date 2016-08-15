@@ -6,7 +6,7 @@ public class Controller : NetworkBehaviour {
 
     float Xcoord; // X coordinate
     float Zcoord; // Z coordinate
-    public GameObject mainCamera;
+    GameObject mainCamera;
 
     // Use this for initialization
     void Start()
