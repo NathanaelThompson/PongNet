@@ -7,7 +7,7 @@ namespace Com.ThoughtExperimentGames.PongNet
     {
         [Tooltip("The local player instance. Use this to know if the local player is represented in the Scene")]
         public static GameObject LocalPlayerInstance;
-        GameObject PlayerUiPrefab;
+        public GameObject PlayerUiPrefab;
 
        void Awake()
         {
@@ -25,7 +25,7 @@ namespace Com.ThoughtExperimentGames.PongNet
         void Start()
         {
             CameraWork _cameraWork = this.gameObject.GetComponent<CameraWork>();
-            PlayerUiPrefab = LocalPlayerInstance;
+           // PlayerUiPrefab = LocalPlayerInstance;
 
             if (_cameraWork != null)
             {
@@ -37,6 +37,7 @@ namespace Com.ThoughtExperimentGames.PongNet
             else {
                 Debug.LogError("<Color=Red><a>Missing</a></Color> CameraWork Component on playerPrefab.", this);
             }
+
             if (PlayerUiPrefab != null)
             {
                 GameObject _uiGo = Instantiate(PlayerUiPrefab) as GameObject;

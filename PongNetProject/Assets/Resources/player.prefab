@@ -27,6 +27,7 @@ GameObject:
   - 114: {fileID: 114000011312920438}
   - 114: {fileID: 114000012294445834}
   - 54: {fileID: 54000012780644086}
+  - 114: {fileID: 114000011939475636}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -109,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d78096e16f5cbb94abdbdd857373c006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  height: 2
 --- !u!114 &114000011753526020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,6 +172,19 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &114000011939475636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011076162234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400d972ff2e7b3e48803b0afe53f9c97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerUiPrefab: {fileID: 1000010166814518, guid: 65e0df92e2181d14aa34ae58b1c03459,
+    type: 2}
 --- !u!114 &114000012294445834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,7 +200,7 @@ MonoBehaviour:
   height: 3
   heightSmoothLag: 0.3
   centerOffset: {x: 0, y: 0, z: 0}
-  followOnStart: 1
+  followOnStart: 0
 --- !u!114 &114000014066926680
 MonoBehaviour:
   m_ObjectHideFlags: 1
